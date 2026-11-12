@@ -1,0 +1,36 @@
+site_id: inventory-order-l0-demo
+project: 库存与订单管理系统 L0 Mock Demo
+status: draft
+level: L0
+environment:
+  local: confirmed
+  preview: not_authorized
+  production: prohibited
+domains:
+  preview: TBD
+  production: TBD
+repository:
+  url: TBD
+  approved_branch: eli
+  production_branch: main
+architecture: static-mock-frontend
+toolchain:
+  node: ">=22.13.0"
+  package_manager: npm
+  lockfile: package-lock.json
+deployment:
+  carrier: Sites
+  controlled_entry: TBD
+  migration: none
+storage:
+  database: none
+  media: none
+health: local-build
+rollback: source-version-only
+owners:
+  owner: 待确认
+  developer: Codex 执行线程
+  server_owner: 不适用
+notes:
+  - 不包含 secret 或真实业务数据
+  - 当前禁止生产部署
